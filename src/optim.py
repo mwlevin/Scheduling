@@ -399,6 +399,14 @@ class optim:
         
         print(self.ilp.solve_details.status)
         
+        for c in self.courses:
+            if c.freq >= 2:
+                print(c, self.ilp.num_instructors[c].solution_value)
+                
+                for i in self.faculty:
+                    if self.ilp.taught[(c,i)].solution_value > 0.9:
+                        print("\t", i)
+        
         return "infeasible" not in self.ilp.solve_details.status
         
     def initModel(self):
@@ -406,7 +414,7 @@ class optim:
         
         self.ilp.x = {(c,s): self.ilp.integer_var(lb=0, ub=1) for c in self.courses for s in self.semesters}
         self.ilp.a = {(c,s,i): self.ilp.integer_var(lb=0, ub=1) for c in self.courses for s in self.semesters for i in self.faculty}
-        self.ilp.extra = {(s,i): self.ilp.continuous_var(lb=0,ub=1) for s in self.semesters for i in self.faculty}
+        self.ilp.extra = {(s,i): self.ilp.continuous_var(lb=0,ub=2) for s in self.semesters for i in self.faculty}
         self.ilp.taught = {(c,i): self.ilp.integer_var(lb=0, ub=1) for c in self.courses for i in self.faculty}
         self.ilp.num_instructors = {c: self.ilp.integer_var(lb=0) for c in self.courses}    
         
@@ -460,6 +468,9 @@ class optim:
                     for s in self.semesters:
                         self.ilp.add_constraint(self.ilp.taught[(c,i)] >= self.ilp.a[(c,s,i)])
                     self.ilp.add_constraint(self.ilp.taught[(c,i)] <= sum(self.ilp.a[(c,s,i)] for s in self.semesters))
+                else:
+                    self.ilp.taught[(c,i)].ub = 0
+
                         
                         
         for c in self.courses:
@@ -491,7 +502,7 @@ class optim:
         # 2 instructors for course with freq of 2
         for c in self.courses:
             if c.freq >= 2:
-                self.ilp.add_constraint(self.ilp.num_instructors[c] >= 2)
+                self.ilp.add_constraint(self.ilp.num_instructors[c] >= 1)
         
         
         overload =  sum(self.ilp.extra[(s,i)] for s in self.semesters for i in self.faculty)
