@@ -1,0 +1,143 @@
+﻿R =,part of regular course rotation,,,,,,Transportation,,,,,,Geo,,,,,,Water,,,,,,,Environmental,,,,,,,Structure,,,,,,,,,
+W =,willing to teach,,,,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,35,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,,,
+,,,,Teachers --> ,,CADD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,is the class assigned?,M. Anderson,Johnson,Levin,Stern,Khani,Davis,Choi,Marasteanu,Labuz,Detourney,Guzina,Strack,Barnes,Gonella,Hill,Voller,Guala,Ebtehaj,Feng,Yang,Hondzo,Novak,Arnold,LaPara,Surdo,Xiong,Hozalski,Behrens,Mortazavi,Le,Worsfold,Dos Santos,Linderman,Shemshadian,He,,,is the class assigned?
+,,Popular (>=10) in 2 years cycle,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Popular (>=10) in 2 years cycle,,
+# classes,semesters/year,classes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,classes,,
+1,2,CEGE 1101/001 LEC,Engineering for Society: CEGE,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",0
+2,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",0
+3,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",0
+4,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1101/001 LEC,"Introduction to CE, EnvE, GeoE",0
+5,2,CEGE 1201/001 LEC,Emerging Technologies in Trans,,,,R,W,,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1201/001 LEC,Emerging Technologies in Trans,0
+6,,CEGE 1201/001 LEC,Emerging Technologies in Trans,,,,R,W,,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1201/001 LEC,Emerging Technologies in Trans,0
+7,,CEGE 1201/001 LEC,Emerging Technologies in Trans,,,,R,W,,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1201/001 LEC,Emerging Technologies in Trans,0
+8,,CEGE 1201/001 LEC,Emerging Technologies in Trans,,,,R,W,,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 1201/001 LEC,Emerging Technologies in Trans,0
+9,2,CEGE 1501/005 LAB,Environmental Issues Solutions,,,,,,,,,,,,,,,,W,,,,,W,,,W,W,W,,,R,,,,,,,,CEGE 1501/005 LAB,Environmental Issues Solutions,0
+10,,CEGE 1501/005 LAB,Environmental Issues Solutions,,,,,,,,,,,,,,,,W,,,,,W,,,W,W,W,,,R,,,,,,,,CEGE 1501/005 LAB,Environmental Issues Solutions,0
+11,,CEGE 1501/005 LAB,Environmental Issues Solutions,,,,,,,,,,,,,,,,W,,,,,W,,,W,W,W,,,R,,,,,,,,CEGE 1501/005 LAB,Environmental Issues Solutions,0
+12,,CEGE 1501/005 LAB,Environmental Issues Solutions,,,,,,,,,,,,,,,,W,,,,,W,,,W,W,W,,,R,,,,,,,,CEGE 1501/005 LAB,Environmental Issues Solutions,0
+13,2,CEGE 3101/001 LEC,Computer Applications I,,,,W,W,,,R,,,,,,R,R,W,,,,,,,,,,,,,,,,,,,,,CEGE 3101/001 LEC,Computer Applications I,0
+14,,CEGE 3101/001 LEC,Computer Applications I,,,,W,W,,,R,,,,,,R,R,W,,,,,,,,,,,,,,,,,,,,,CEGE 3101/001 LEC,Computer Applications I,0
+15,,CEGE 3101/001 LEC,Computer Applications I,,,,W,W,,,R,,,,,,R,R,W,,,,,,,,,,,,,,,,,,,,,CEGE 3101/001 LEC,Computer Applications I,0
+16,,CEGE 3101/001 LEC,Computer Applications I,,,,W,W,,,R,,,,,,R,R,W,,,,,,,,,,,,,,,,,,,,,CEGE 3101/001 LEC,Computer Applications I,0
+17,2,CEGE 3102/001 LEC,Uncertainty & Decision Analy,,,,R,W,,,W,,,,,,R,,W,,,,R,,,,,,,,,,,W,,,,,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,0
+18,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,,,,R,W,,,W,,,,,,R,,W,,,,R,,,,,,,,,,,W,,,,,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,0
+19,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,,,,R,W,,,W,,,,,,R,,W,,,,R,,,,,,,,,,,W,,,,,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,0
+20,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,,,,R,W,,,W,,,,,,R,,W,,,,R,,,,,,,,,,,W,,,,,,CEGE 3102/001 LEC,Uncertainty & Decision Analy,0
+21,2,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,,,,,,,,,,,,,,R,,,,,R,,,,,,W,,,,,,,,,,,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,0
+22,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,,,,,,,,,,,,,,R,,,,,R,,,,,,W,,,,,,,,,,,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,0
+23,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,,,,,,,,,,,,,,R,,,,,R,,,,,,W,,,,,,,,,,,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,0
+24,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,,,,,,,,,,,,,,R,,,,,R,,,,,,W,,,,,,,,,,,,CEGE 3103/001 DIS,Engrg Ethics and Prof Practice,0
+25,2,CEGE 3402/004 LAB,Civil Engineering Materials,,,,,,,,,R,R,,,,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3402/004 LAB,Civil Engineering Materials,0
+26,,CEGE 3402/004 LAB,Civil Engineering Materials,,,,,,,,,R,R,,,,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3402/004 LAB,Civil Engineering Materials,0
+27,,CEGE 3402/004 LAB,Civil Engineering Materials,,,,,,,,,R,R,,,,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3402/004 LAB,Civil Engineering Materials,0
+28,,CEGE 3402/004 LAB,Civil Engineering Materials,,,,,,,,,R,R,,,,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3402/004 LAB,Civil Engineering Materials,0
+29,2,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,W,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,0
+30,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,W,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,0
+31,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,W,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,0
+32,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,W,,CEGE 4101W/001 LEC,Project Mgmt & Engrg Economics,0
+33,1,CEGE 4104W/001 LEC,Capstone Design for CEGE,,,,,,,,,W,,,,,,,W,,,,,,,,,W,,,R,,W,,W,,W,,,CEGE 4104W/001 LEC,Capstone Design for CEGE,0
+34,,CEGE 4104W/001 LEC,Capstone Design for CEGE,,,,,,,,,W,,,,,,,W,,,,,,,,,W,,,R,,W,,W,,W,,,CEGE 4104W/001 LEC,Capstone Design for CEGE,0
+35,1,CEGE 4111/001 LAB,CADD for Civil Engineers,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4111/001 LAB,CADD for Civil Engineers,0
+36,,CEGE 4111/001 LAB,CADD for Civil Engineers,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4111/001 LAB,CADD for Civil Engineers,0
+37,1,CEGE 4121/001 LEC,Computer Applications II,,,,W,,,,,,,,R,,W,W,W,,,,,,,,,,,,,,,,,,,,,CEGE 4121/001 LEC,Computer Applications II,0
+38,,CEGE 4121/001 LEC,Computer Applications II,,,,W,,,,,,,,R,,W,W,W,,,,,,,,,,,,,,,,,,,,,CEGE 4121/001 LEC,Computer Applications II,0
+39,2,CEGE 3301/005 LAB,Soil Mechanics I,,,,,,,,,,W,R,R,R,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3301/005 LAB,Soil Mechanics I,0
+40,,CEGE 3301/005 LAB,Soil Mechanics I,,,,,,,,,,W,R,R,R,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3301/005 LAB,Soil Mechanics I,0
+41,,CEGE 3301/005 LAB,Soil Mechanics I,,,,,,,,,,W,R,R,R,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3301/005 LAB,Soil Mechanics I,0
+42,,CEGE 3301/005 LAB,Soil Mechanics I,,,,,,,,,,W,R,R,R,,,W,,,,,,,,,,,,,,,,,,,,,CEGE 3301/005 LAB,Soil Mechanics I,0
+43,1,CEGE 4301/003 LAB,Soil Mechanics II,,,,,,,,,,,,,R,,W,,,,,,,,,,,,,,,,,,,,,,CEGE 4301/003 LAB,Soil Mechanics II,0
+44,,CEGE 4301/003 LAB,Soil Mechanics II,,,,,,,,,,,,,R,,W,,,,,,,,,,,,,,,,,,,,,,CEGE 4301/003 LAB,Soil Mechanics II,0
+45,1,CEGE 4311/001 LEC,Rock Mechanics,,,,,,,,,,R,R,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4311/001 LEC,Rock Mechanics,0
+46,,CEGE 4311/001 LEC,Rock Mechanics,,,,,,,,,,R,R,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4311/001 LEC,Rock Mechanics,0
+47,1,CEGE 4351/001 LEC,Groundwater Mechanics,,,,,,,,,,,,,R,W,,,,,,,,,,,,,,,,,,,,,,,CEGE 4351/001 LEC,Groundwater Mechanics,0
+48,,CEGE 4351/001 LEC,Groundwater Mechanics,,,,,,,,,,,,,R,W,,,,,,,,,,,,,,,,,,,,,,,CEGE 4351/001 LEC,Groundwater Mechanics,0
+49,2,CEGE 3201/002 DIS,Transportation Engineering,,,,R,R,R,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 3201/002 DIS,Transportation Engineering,0
+50,,CEGE 3201/002 DIS,Transportation Engineering,,,,R,R,R,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 3201/002 DIS,Transportation Engineering,0
+51,,CEGE 3201/002 DIS,Transportation Engineering,,,,R,R,R,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 3201/002 DIS,Transportation Engineering,0
+52,,CEGE 3201/002 DIS,Transportation Engineering,,,,R,R,R,,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 3201/002 DIS,Transportation Engineering,0
+53,1,CEGE 4211/001 LEC,Hwy Design & Traffic Operation,,,,W,R,,R,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4211/001 LEC,Hwy Design & Traffic Operation,0
+54,,CEGE 4211/001 LEC,Hwy Design & Traffic Operation,,,,W,R,,R,W,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4211/001 LEC,Hwy Design & Traffic Operation,0
+55,1,CEGE 4214/001 LEC,Infrastructure Systems Eng.,,,,W,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4214/001 LEC,Infrastructure Systems Eng.,0
+56,,CEGE 4214/001 LEC,Infrastructure Systems Eng.,,,,W,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4214/001 LEC,Infrastructure Systems Eng.,0
+57,1,CEGE 4219/001 LEC,Air Transportation Systems,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4219/001 LEC,Air Transportation Systems,0
+58,,CEGE 4219/001 LEC,Air Transportation Systems,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4219/001 LEC,Air Transportation Systems,0
+59,1,CEGE 4253/001 LEC,"Pavement Design, Eng, & Mgmt",,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4253/001 LEC,"Pavement Design, Eng, & Mgmt",0
+60,,CEGE 4253/001 LEC,"Pavement Design, Eng, & Mgmt",,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,CEGE 4253/001 LEC,"Pavement Design, Eng, & Mgmt",0
+61,2,CEGE 3502/4522,Fluid Mechanics and Review,,,,,,,,,,,,,,,,R,,R,,,R,,,,,,,,,,,,,,,,CEGE 3502/4522,Fluid Mechanics and Review,0
+62,,CEGE 3502/4522,Fluid Mechanics and Review,,,,,,,,,,,,,,,,R,,R,,,R,,,,,,,,,,,,,,,,CEGE 3502/4522,Fluid Mechanics and Review,0
+63,,CEGE 3502/4522,Fluid Mechanics and Review,,,,,,,,,,,,,,,,R,,R,,,R,,,,,,,,,,,,,,,,CEGE 3502/4522,Fluid Mechanics and Review,0
+64,,CEGE 3502/4522,Fluid Mechanics and Review,,,,,,,,,,,,,,,,R,,R,,,R,,,,,,,,,,,,,,,,CEGE 3502/4522,Fluid Mechanics and Review,0
+65,2,CEGE 4501/004 DIS,Hydrologic Design,,,,,,,,,,,,,,W,,,,,R,R,,,,,,,,,,,,,,,,,CEGE 4501/004 DIS,Hydrologic Design,0
+66,,CEGE 4501/004 DIS,Hydrologic Design,,,,,,,,,,,,,,W,,,,,R,R,,,,,,,,,,,,,,,,,CEGE 4501/004 DIS,Hydrologic Design,0
+67,,CEGE 4501/004 DIS,Hydrologic Design,,,,,,,,,,,,,,W,,,,,R,R,,,,,,,,,,,,,,,,,CEGE 4501/004 DIS,Hydrologic Design,0
+68,,CEGE 4501/004 DIS,Hydrologic Design,,,,,,,,,,,,,,W,,,,,R,R,,,,,,,,,,,,,,,,,CEGE 4501/004 DIS,Hydrologic Design,0
+69,0.5,CEGE 8521/001 LEC,Atmospheric Boundary Layer,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,CEGE 8521/001 LEC,Atmospheric Boundary Layer,0
+70,0.5,CEGE 4160/001 LEC,Special Topics climate change,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,CEGE 4160/001 LEC,Special Topics climate change,0
+71,0.5,CEGE 5513/001 LEC,Energy Conversion,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,CEGE 5513/001 LEC,Energy Conversion,0
+72,? 0.5,CEGE 4160/001 LEC,Aquatic environment,8561?,,,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,CEGE 4160/001 LEC,Aquatic environment,0
+73,? 0.5,CEGE 4515/5515,Remote Sensing of Env. & Water,,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,CEGE 4515/5515,Remote Sensing of Env. & Water,0
+74,2,CEGE 3501/001 LEC,Environmental Engineering,,,,,,,,,,,,,,,,,,,,,,,,R,R,R,,,,,,,,,,,CEGE 3501/001 LEC,Environmental Engineering,0
+75,,CEGE 3501/001 LEC,Environmental Engineering,,,,,,,,,,,,,,,,,,,,,,,,R,R,R,,,,,,,,,,,CEGE 3501/001 LEC,Environmental Engineering,0
+76,,CEGE 3501/001 LEC,Environmental Engineering,,,,,,,,,,,,,,,,,,,,,,,,R,R,R,,,,,,,,,,,CEGE 3501/001 LEC,Environmental Engineering,0
+77,,CEGE 3501/001 LEC,Environmental Engineering,,,,,,,,,,,,,,,,,,,,,,,,R,R,R,,,,,,,,,,,CEGE 3501/001 LEC,Environmental Engineering,0
+78,1,CEGE 3541/003 LAB,Environmental Engineering Lab,,,,,,,,,,,,,,,,,,,,,,,,,W,R,,,,,,,,,,,CEGE 3541/003 LAB,Environmental Engineering Lab,0
+79,,CEGE 3541/003 LAB,Environmental Engineering Lab,,,,,,,,,,,,,,,,,,,,,,,,,W,R,,,,,,,,,,,CEGE 3541/003 LAB,Environmental Engineering Lab,0
+80,1,CEGE 4502/001 LEC,Water and Wastewater Treatment,,,,,,,,,,,,,,,,,,,,,,,,,W,,R,R,,,,,,,,,CEGE 4502/001 LEC,Water and Wastewater Treatment,0
+81,,CEGE 4502/001 LEC,Water and Wastewater Treatment,,,,,,,,,,,,,,,,,,,,,,,,,W,,R,R,,,,,,,,,CEGE 4502/001 LEC,Water and Wastewater Treatment,0
+82,1,CEGE 4561/001 LEC,Solids and Hazardous Wastes,,,,,,,,,,,,,,,,,,,,,,,W,,,R,,,,,,,,,,,CEGE 4561/001 LEC,Solids and Hazardous Wastes,0
+83,,CEGE 4561/001 LEC,Solids and Hazardous Wastes,,,,,,,,,,,,,,,,,,,,,,,W,,,R,,,,,,,,,,,CEGE 4561/001 LEC,Solids and Hazardous Wastes,0
+84,1,CEGE 4562/001 LEC,Remediation Technologies,,,,,,,,,,,,,,,,,,,,,,,W,,,,,R,,,,,,,,,CEGE 4562/001 LEC,Remediation Technologies,0
+85,,CEGE 4562/001 LEC,Remediation Technologies,,,,,,,,,,,,,,,,,,,,,,,W,,,,,R,,,,,,,,,CEGE 4562/001 LEC,Remediation Technologies,0
+86,1,CEGE 4563/001 LEC,Pollutant Fate and Transport,,,,,,,,,,,,,,,,,,,,,W,R,,W,,R,,,,,,,,,,,CEGE 4563/001 LEC,Pollutant Fate and Transport,0
+87,,CEGE 4563/001 LEC,Pollutant Fate and Transport,,,,,,,,,,,,,,,,,,,,,W,R,,W,,R,,,,,,,,,,,CEGE 4563/001 LEC,Pollutant Fate and Transport,0
+88,1,CEGE 5541/001 LEC,Environmental Water Chemistry,,,,,,,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,CEGE 5541/001 LEC,Environmental Water Chemistry,0
+89,,CEGE 5541/001 LEC,Environmental Water Chemistry,,,,,,,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,CEGE 5541/001 LEC,Environmental Water Chemistry,0
+90,1,CEGE 5551/001 LEC,Enviromental Microbiology,,,,,,,,,,,,,,,,,,,,,,,W,,W,,,,R,,,,,,,,CEGE 5551/001 LEC,Enviromental Microbiology,0
+91,,CEGE 5551/001 LEC,Enviromental Microbiology,,,,,,,,,,,,,,,,,,,,,,,W,,W,,,,R,,,,,,,,CEGE 5551/001 LEC,Enviromental Microbiology,0
+92,?,CEGE 8504/001 LEC,Unit Op Theory,,,,,,,,,,,,,,,,,,,,,,,,,,,R,R,,,,,,,,,CEGE 8504/001 LEC,Unit Op Theory,0
+93,2,CEGE 3401/001 LEC,Linear Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,R,W,R,W,R,R,CEGE 3401/001 LEC,Linear Structural Analysis,0
+94,,CEGE 3401/001 LEC,Linear Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,R,W,R,W,R,R,CEGE 3401/001 LEC,Linear Structural Analysis,0
+95,,CEGE 3401/001 LEC,Linear Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,R,W,R,W,R,R,CEGE 3401/001 LEC,Linear Structural Analysis,0
+96,,CEGE 3401/001 LEC,Linear Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,R,W,R,W,R,R,CEGE 3401/001 LEC,Linear Structural Analysis,0
+97,2,CEGE 4401/004 DIS,Steel Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,R,,R,W,,CEGE 4401/004 DIS,Steel Concrete Design,0
+98,,CEGE 4401/004 DIS,Steel Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,R,,R,W,,CEGE 4401/004 DIS,Steel Concrete Design,0
+99,,CEGE 4401/004 DIS,Steel Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,R,,R,W,,CEGE 4401/004 DIS,Steel Concrete Design,0
+100,,CEGE 4401/004 DIS,Steel Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,R,,R,W,,CEGE 4401/004 DIS,Steel Concrete Design,0
+101,1,CEGE 4411/001 LEC,Matrix Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,W,R,W,,W,CEGE 4411/001 LEC,Matrix Structural Analysis,0
+102,,CEGE 4411/001 LEC,Matrix Structural Analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,W,R,W,,W,CEGE 4411/001 LEC,Matrix Structural Analysis,0
+103,1,CEGE 4412/001 LEC,Reinforced Concrete II,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,W,W,,CEGE 4412/001 LEC,Reinforced Concrete II,0
+104,,CEGE 4412/001 LEC,Reinforced Concrete II,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,W,W,,CEGE 4412/001 LEC,Reinforced Concrete II,0
+105,1,CEGE 4413/001 LEC,Steel Design II,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,R,,,W,W,,CEGE 4413/001 LEC,Steel Design II,0
+106,,CEGE 4413/001 LEC,Steel Design II,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,R,,,W,W,,CEGE 4413/001 LEC,Steel Design II,0
+107,1,CEGE 4416/5416,Sensors in Infrastructure,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,,CEGE 4416/5416,Sensors in Infrastructure,0
+108,,CEGE 4416/5416,Sensors in Infrastructure,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R,,,CEGE 4416/5416,Sensors in Infrastructure,0
+109,1,CEGE 4417/5417,Str Eng. Design of Wood Bldgs.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,,R,R,,CEGE 4417/5417,Str Eng. Design of Wood Bldgs.,0
+110,,CEGE 4417/5417,Str Eng. Design of Wood Bldgs.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,,R,R,,CEGE 4417/5417,Str Eng. Design of Wood Bldgs.,0
+111,1,CEGE 5414/001 LEC,Prestressed Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,R,,CEGE 5414/001 LEC,Prestressed Concrete Design,0
+112,,CEGE 5414/001 LEC,Prestressed Concrete Design,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,R,,CEGE 5414/001 LEC,Prestressed Concrete Design,0
+113,1,CEGE 5415/001 LEC,Masonry Structures,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,W,,R,R,,CEGE 5415/001 LEC,Masonry Structures,0
+114,,CEGE 5415/001 LEC,Masonry Structures,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,W,,R,R,,CEGE 5415/001 LEC,Masonry Structures,0
+115,1,CEGE 8401/001 LEC,Fundamentals of Finite Element Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,W,R,CEGE 8401/001 LEC,FundFiniteElemMeth,0
+116,,CEGE 8401/001 LEC,FundFiniteElemMeth,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,,W,R,CEGE 8401/001 LEC,FundFiniteElemMeth,0
+117,1,CEGE 8421/001 LEC,Structural Dynamics,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,R,R,,,CEGE 8421/001 LEC,Structural Dynamics,0
+118,,CEGE 8421/001 LEC,Structural Dynamics,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,R,R,,,CEGE 8421/001 LEC,Structural Dynamics,0
+119,? 0.5,CEGE 8422/001 LEC,Earthquake Engrg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,,W,,R,W,,CEGE 8422/001 LEC,Earthquake Engrg,0
+120,?0.5,CEGE 5411/001 LEC,Appl Struct Mech,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,R,,,W,,R,CEGE 5411/001 LEC,Appl Struct Mech,0
+121,1,CEGE 4160/001 LEC,Storytelling for engineers,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+121,,CEGE 4511/001,Hydraulic Structures,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+121,1,CEGE 4512,Open channel hydraulics,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,
+122,1,CEGE 4352,Groundwater modeling,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,
+123,1,CEGE 5341,Wave Methods for Nondestructive Testing,,,,,,,,,,,,R,,,R,,,,,,,,,,,,,,,,,,,,,,,,
+124,1,CEGE 5342,Introduction to Inverse Problems,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,,,,,
+125,1,CEGE 4160/5180,Special Topics climate change,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,,,
+126,1,CEGE 4513/5513,Energy Conversion,,,,,,,,,,,,,,,,,,R,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,M. Anderson,Johnson,Levin,Stern,Khani,Davis,Choi,Marasteanu,Labuz,Detourney,Guzina,Strack,,Gonella,Hill,,Guala,Ebtehaj,Feng,Yang,Hondzo,Novak,Arnold,LaPara,Surdo,Xiong,Hozalski,Behrens,Mortazavi,Le,Worsfold,Dos Santos,Linderman,Shemshadian,He,,,
+classes per faculty =,,3.529411765,<4,,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,#VALUE!,<4,
+4 classes per 2 year cycle * n faculty= ,,136,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+in the optimal case of 3 classes for each fauclty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+leaving oeach one of us the freedom to teach 1 boutique course,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+we would need to reduce to ,,102,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,
