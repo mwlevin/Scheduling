@@ -1,0 +1,7 @@
+﻿name,value
+overload_penalty,200
+current_teaching_benefit,5
+prep_penalty,1
+istaught_benefit,0.2
+same_semester_benefit,30
+more_than_two_penalty,1000

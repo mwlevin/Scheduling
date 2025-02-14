@@ -5,11 +5,14 @@ import time
 import math
 
 class optim:
-    def __init__(self, years, willing_to_teach, initials, frequencies, special_load, required):
+    def __init__(self, years, scenario):
     
-        self.overload_penalty = 200
-        self.current_benefit = 5
-        self.multiple_teacher_penalty = 1
+        self.overload_penalty = 0
+        self.current_benefit = 0
+        self.multiple_teacher_penalty = 0
+        self.istaught_benefit = 0
+        self.same_semester_benefit = 0
+        self.more_than_two_penalty = 0
         
         self.courses = set()
         self.semesters = list()
@@ -28,8 +31,9 @@ class optim:
         
         error = False
         
-        error = not self.readWillingToTeach(willing_to_teach) or error
-        error = not self.readFreq(frequencies, initials) or error
+        error = not self.readWillingToTeach(scenario+"/willing to teach.csv") or error
+        error = not self.readFreq(scenario+"/frequencies.csv", scenario+"/initials.csv") or error
+        error = not self.readParams(scenario+"/params.csv") or error
         
         for i in self.faculty:
             i.setTeaching(years, 2, self.semesters)
@@ -56,14 +60,48 @@ class optim:
         
             
             
-        error = not self.readSpecialTeachingLoad(special_load) or error
-        error = not self.readRequired(required) or error
+        error = not self.readSpecialTeachingLoad(scenario+"/special.csv") or error
+        error = not self.readRequired(scenario+"/required.csv") or error
     
     
     
     
         if error:
             exit()
+            
+    def readParams(self, params_file):
+        error = False
+        with open(params_file, "r") as f:
+            headerline = True
+            
+            for line in f:
+                if headerline:
+                    headerline = False
+                    continue
+                    
+                data = line.split(",")
+                
+                if len(data) > 1:
+                    name = data[0].lower().strip()
+                    value = data[1].strip()
+
+                    #print(name, value)
+                    
+                    if name == "overload_penalty":
+                        self.overload_penalty = float(value)
+                    elif name == "current_teaching_benefit":
+                        self.current_benefit = float(value)
+                    elif name == "prep_penalty":
+                        self.multiple_teacher_penalty = float(value)
+                    elif name == "istaught_benefit":
+                        self.istaught_benefit = float(value)
+                    elif name == "same_semester_benefit":
+                        self.same_semester_benefit = float(value)
+                    elif name == "more_than_two_penalty":
+                        self.more_than_two_penalty = float(value)
+                     
+        
+        return not error
             
     def readRequired(self, required_file):
         error = False
@@ -331,6 +369,15 @@ class optim:
                             
         return not error
     
+    def possibleInstructors(self, course):
+        output = set()
+        
+        for i in self.faculty:
+            if course in i.current_teaching or course in i.possible_teaching:
+                output.add(i)
+                
+        return output
+        
     def printFacultyAssign(self, output):
         with open(output, 'w') as f:
             header = ""
@@ -399,6 +446,9 @@ class optim:
         
         print(self.ilp.solve_details.status)
         
+        output = "infeasible" not in self.ilp.solve_details.status
+        
+        '''
         for c in self.courses:
             if c.freq >= 2:
                 print(c, self.ilp.num_instructors[c].solution_value)
@@ -406,8 +456,24 @@ class optim:
                 for i in self.faculty:
                     if self.ilp.taught[(c,i)].solution_value > 0.9:
                         print("\t", i)
+        '''
         
-        return "infeasible" not in self.ilp.solve_details.status
+        if output:
+            print("overload", self.overload.solution_value, self.overload_penalty*self.overload.solution_value)
+            print("current teaching", self.current.solution_value, self.current.solution_value * self.current_benefit)
+            print("matching semesters", self.same_semester_total.solution_value, self.same_semester_benefit*self.same_semester_total.solution_value)
+            print("num_preps", self.num_preps.solution_value, self.num_preps.solution_value * self.multiple_teacher_penalty)
+            print("is taught", self.istaught.solution_value, self.istaught.solution_value * self.istaught_benefit)
+            print("more than two penalty", self.more_than_two_total.solution_value, self.more_than_two_total.solution_value * self.more_than_two_penalty)
+            
+            '''
+            for c in self.courses:
+                for i in self.faculty:
+                    for s in ['f', 's']:
+                        print(c, i, s, self.ilp.w[(c,s,i)].solution_value)
+            '''
+            
+        return output
         
     def initModel(self):
         self.ilp = Model()
@@ -417,6 +483,23 @@ class optim:
         self.ilp.extra = {(s,i): self.ilp.continuous_var(lb=0,ub=2) for s in self.semesters for i in self.faculty}
         self.ilp.taught = {(c,i): self.ilp.integer_var(lb=0, ub=1) for c in self.courses for i in self.faculty}
         self.ilp.num_instructors = {c: self.ilp.integer_var(lb=0) for c in self.courses}    
+        self.ilp.z = {c: self.ilp.integer_var(lb=0,ub=1) for c in self.courses}
+        self.ilp.w = {(c, s, i): self.ilp.integer_var(lb=0,ub=1) for c in self.courses for i in self.faculty for s in ['f', 's']}
+        self.ilp.num_taught = {(c,i): self.ilp.integer_var(lb=0) for c in self.courses for i in self.faculty} 
+        
+        
+        # number of times taught
+        # penalize teaching a class more than twice over
+        self.ilp.more_than_two = {(c,i): self.ilp.integer_var(lb=0,ub=1) for c in self.courses for i in self.faculty}
+        
+        for i in self.faculty:
+            for c in self.courses:
+                self.ilp.add_constraint(self.ilp.num_taught[(c,i)] == sum(self.ilp.a[(c,s,i)] for s in self.semesters))
+                self.ilp.add_constraint(self.ilp.more_than_two[(c,i)] * 4 >= self.ilp.num_taught[(c,i)]-2)
+                
+        
+        
+        
         
         # specified courses
         for i in self.faculty:
@@ -476,7 +559,22 @@ class optim:
         for c in self.courses:
             self.ilp.add_constraint(self.ilp.num_instructors[c] == sum(self.ilp.taught[(c,i)] for i in self.faculty))
             
-            
+        
+        
+        # same semester benefit
+        for c in self.courses:
+            for s in ['f', 's']:
+                
+                for i in self.faculty:
+                    for y in self.years:
+                        if s+str(y) in self.semesters:
+                            self.ilp.add_constraint(self.ilp.w[(c,s,i)] <= self.ilp.a[(c, s+str(y), i)])
+                    lhs = 0
+
+                    for y in self.years:
+                        if s+str(y) in self.semesters:
+                            lhs += self.ilp.a[(c, s+str(y), i)]
+                self.ilp.add_constraint(self.ilp.w[(c,s,i)] >= lhs)
             
         
         # courses must be taught as specified
@@ -501,19 +599,44 @@ class optim:
                     
         # 2 instructors for course with freq of 2
         for c in self.courses:
-            if c.freq >= 2:
-                self.ilp.add_constraint(self.ilp.num_instructors[c] >= 1)
+            if c.freq >= 2 and len(self.possibleInstructors(c)) > 1:
+                self.ilp.add_constraint(self.ilp.num_instructors[c] >= 2)
         
         
-        overload =  sum(self.ilp.extra[(s,i)] for s in self.semesters for i in self.faculty)
+        # is taught
+        for c in self.courses:
+            for s in self.semesters:
+                self.ilp.add_constraint(self.ilp.z[c] >= self.ilp.x[(c,s)])
+            self.ilp.add_constraint(self.ilp.z[c] <= sum(self.ilp.x[(c,s)] for s in self.semesters))
         
-        current = 0
+        
+        
+        self.overload =  sum(self.ilp.extra[(s,i)] for s in self.semesters for i in self.faculty)
+        
+        self.current = 0
         
         for i in self.faculty:
             for c in i.current_teaching:
                 for s in self.semesters:
-                    current += self.ilp.a[(c,s,i)]
+                    self.current += self.ilp.a[(c,s,i)]
                     
-        num_preps = sum(self.ilp.taught[(c,i)] for c in self.courses for i in self.faculty)
+        self.num_preps = sum(self.ilp.taught[(c,i)] for c in self.courses for i in self.faculty)
+        
+        self.istaught = sum(self.ilp.z[c] for c in self.courses)
+        
+        self.same_semester_total = sum(self.ilp.w[(c, s,i)] for c in self.courses for s in ['f', 's'] for i in self.faculty)
                     
-        self.ilp.minimize(self.overload_penalty * overload - self.current_benefit  * current + self.multiple_teacher_penalty * num_preps)
+        self.more_than_two_total = sum(self.ilp.more_than_two[(c,i)] for c in self.courses for i in self.faculty)
+        
+        obj = self.overload_penalty * self.overload
+        obj -= self.current_benefit  * self.current
+        obj += self.multiple_teacher_penalty * self.num_preps
+        obj -= self.istaught_benefit * self.istaught
+        obj -= self.same_semester_total * self.same_semester_benefit
+        obj += self.more_than_two_penalty * self.more_than_two_total
+        
+        self.ilp.minimize(obj)
+        
+        
+        
+        

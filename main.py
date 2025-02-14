@@ -1,14 +1,10 @@
 from src import optim
-
+import sys
 
 years = [2025, 2026, 2027]
-willing_file = "data/willing to teach.csv"
-frequencies_file = "data/frequencies.csv"
-initials_file = "data/initials.csv"
-special_file = "data/special.csv"
-required_file = "data/required.csv"
+scenario = sys.argv[1]
 
-test = optim.optim(years, willing_file, initials_file, frequencies_file, special_file, required_file)
+test = optim.optim(years, "data/"+scenario)
 
 if test.solve():
     test.printCourseAssign("courses.csv")
